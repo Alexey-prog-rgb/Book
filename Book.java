@@ -29,10 +29,12 @@ public class Book {
 
     public int estimatedPrice(){
         int price = 3 * pages;
-          if(price < 250) {
-              price = 250;
+          if(price < 250){
+              return 250;
           }
-        return price;
+          else{
+              return price;
+          }
     }
 
 }
